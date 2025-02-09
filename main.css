@@ -1,0 +1,232 @@
+html, body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    font-family:  'Calibri';
+}
+
+p{
+    width: 2*inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    margin:0;
+    padding:0;
+}
+
+.opcje{
+    display: block;
+    height: 20%;
+    width:100%;
+    background-color: white;
+}
+
+.pasek_rodzaji{
+    display: block;
+    height: 20%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.Opcja-symulacji, .Opcja-tworzenia, .Opcja-wlasciwosci{
+    color:rgb(51, 51, 51);
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+}
+
+.Opcja-wlasciwosci{
+    background-color: rgb(44, 120, 206);
+}
+
+.Opcja-symulacji:hover, .Opcja-tworzenia:hover{
+    color:blue;
+    cursor:default;
+}
+
+.Opcja-wlasciwosci:hover{
+    color:white;
+    cursor:default;
+}
+
+.trescWstazki{
+    height: 80%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0px 0px 2px 0px black inset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5%;
+    align-items: center;
+}
+
+.sterowanie, .pokazywanie, .material,.soczewki, .zrodla-swiatla, .dod_przyciski, .dane, .zaawansowane-przycisk{
+    height:80%;
+    border-left: 1px solid rgb(155, 155, 155);
+    border-right: 1px solid rgb(155, 155, 155);
+    border-top: none; 
+    border-bottom: none; 
+    padding: 5px; 
+    outline: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sterowanie, .pokazywanie, .material,.soczewki, .zrodla-swiatla, .dod_przyciski, .zaawansowane-przycisk{
+    width:20%;
+}
+
+.dane, .dod_przyciski{
+    margin:10px;
+}
+
+.dane{
+    width:80%;
+}
+
+
+span{
+    font-family:  'Calibri';
+    font-weight: lighter;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    height:10%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.osrodek{
+    width:100%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uruchom, .reset, .wyczysc, .pokaz-ogniskowe, .pokaz-grid, .usun, .skupiajaca, .promien-swietlny, .F-zaawansowane{
+    height: 70%;
+    width:25%;
+}
+
+.kontener-przyciskow{
+    width: 100%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.obszar-symulacji{
+    margin:0;
+    padding:0;
+    display: block;
+    height: 80%;
+    width:100%;
+    background-color: white;
+}
+
+.lista-obiektow{
+    overflow-y: auto;
+    padding: 0px;
+    margin: 20px;
+    height: 70%;
+    min-height: 70%;
+    box-shadow: 0px 0px 2px 0px black inset;
+    width:10%;
+    display: inline-block;
+}
+
+.przyciskObiektu{
+    display:block;
+    width:100%;
+}
+
+.przyciskObiektu:hover{
+    background-color: blue;
+    color: white;
+}
+
+.okno-zaawansowane{
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 60%;
+    padding: 30px;
+    background: white;
+    border: 1px solid #222324; 
+    border-radius: 4px;        
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.15);
+    
+    z-index: 1000; 
+    display: none; 
+    justify-content: space-between;
+}
+
+.zmienne-formularz{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width:40%;
+    height:60%;
+}
+
+.zaawansowane{
+    width:100%;
+}
+
+.zmienne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dol {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:30%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zamknij{
+    height:30%;
+    width:30%;
+    font-size: large;
+}
+
+input[type="text"] {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; 
+    font-size: 1.5vh;           
+    color: #333333;            
+    background-color: #ffffff; 
+    
+    border: 1px solid #a3bffa; 
+    border-radius: 4px;        
+    
+    padding: 8px 12px;         
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+    
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input[type="text"]:focus {
+    outline: none;             
+    border-color: #6495ed;     
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.5); 
+}
+
+

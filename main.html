@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet"/> 
+    <title>Symulacja układów optycznych</title>
+</head>
+<body>
+<div class="opcje" id="opcje">
+    <div class="pasek_rodzaji", id="pasek_rodzaji">
+        <div class="Opcja-symulacji" id="Opcja-symulacji"><p>SYMULACJA</p></div>
+        <div class="Opcja-tworzenia" id="Opcja-tworzenia"><p>TWORZENIE</p></div>
+    </div>
+    <div class="trescWstazki" id="trescWstazki">
+        
+    </div>
+    <div class="okno-zaawansowane" id="okno-zaawansowane">
+        <div class='zmienne' id='zmienne'>
+            <form class='zmienne-formularz' id='zmienne-formularz'>  
+                <label for='R1'>R1: </label>
+                <input class="zaawansowane" type='text' id='R1' placeholder='podaj R1:' >
+                <label for='R2'>R2: </label>
+                <input class="zaawansowane" type='text' id='R2' placeholder='podaj R2:' >
+                <label for='Ns'>Ns: </label>
+                <input class="zaawansowane" type='text' id='Ns' placeholder='podaj Ns:' >
+            </form>
+            <div class="obraz">
+                <canvas class="rys-socz" id="rys-socz">
+                    
+                </canvas>
+            </div>
+        </div>
+        <div class="dol" id="dol"><button class="zamknij" id="zamknij">Policz</button></div>
+    </div>
+</div>
+<div class="obszar-symulacji" id="obszar-symulacji">
+    <canvas id="canvas" class="canvas">
+
+    </canvas>
+</div>
+<script src = "main.js"></script>
+</body>
+</html>
